@@ -1,0 +1,70 @@
+:root{
+    --primary_color: #007bff;
+    --primary_hover_color : #0056b3;
+    --success_color : #28a745;
+    --success_hover_color : #218838;
+    --title_color : #333;
+    --bg_color : wheat;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--bg_color);
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.content h1{
+    color : #0056b3
+}
+.content h4{
+    color : #666
+}
+.content table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+table th, table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+table th{
+    background-color: #f0f0f0;
+}
+.content a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary_color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: var(--primary_color);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.content a:hover{
+    background-color: var(--primary_hover_color);
+}
+.content input{
+    padding: 10px;
+    margin: 5px;
+    border : solid 1px;
+    border-radius: 5px;
+}
+.content #btn_add{
+    background-color: var(--success_color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.content #btn_add:hover{
+    background-color: var(--success_hover_color);
+}
